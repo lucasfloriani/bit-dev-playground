@@ -1,0 +1,12 @@
+.form-field__input {
+  border: 0;
+  border-bottom: 2px solid #9e9e9e;
+  outline: none;
+  transition: .2s ease-in-out;
+  box-sizing: border-box;
+}
+
+.form-field__input:valid,
+.form-field__input:focus {
+  border-bottom: 2px solid #26a69a;
+}

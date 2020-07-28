@@ -3,21 +3,22 @@ import styled, { css } from 'styled-components'
 import {
   font, key, palette, size,
 } from 'styled-theme'
-import { ColorProp } from '../../themes/wrapper/types'
+// import { ColorProp } from '../theme/types'
 
-type ParagraphProps = {
-  align?: string
-  color: ColorProp
-  fontSize: string
-  fontWeight: string
-  lineHeight: string
-  margin: string
-  width: string
-}
+// type ParagraphProps = {
+//   align?: string
+//   color: ColorProp
+//   fontSize: string
+//   fontWeight: string
+//   lineHeight: string
+//   margin: string
+//   width: string
+// }
 
 const Paragraph = styled(({
   align, color, fontSize, fontWeight, lineHeight, margin, width, ...props
-}: ParagraphProps) => <p {...props} />)`
+// }: ParagraphProps) => <p {...props} />)`
+}) => <p {...props} />)`
   color: ${({ color: { type, position } }) => palette(type, position)};
   font-family: ${font('primary')};
   font-size: ${({ fontSize }) => size(fontSize)};

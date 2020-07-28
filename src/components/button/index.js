@@ -1,30 +1,31 @@
 import React from 'react'
-import { ColorProp } from '../../themes/wrapper/types'
+// import { ColorProp } from '../theme/types'
 import { Anchor, StyledLink, StyledButton } from './style'
 
-export type ButtonProps = {
-  backgroundColor: ColorProp
-  borderRadius: string
-  border: string
-  children: any
-  color: ColorProp
-  disabled?: boolean
-  fontSize: string
-  fontWeight: string
-  grow?: number
-  height?: string
-  href?: string
-  hoverBackgroundColor: ColorProp
-  hoverColor: ColorProp
-  margin?: string
-  maxWidth?: string
-  padding: string
-  shadow: string
-  to?: string
-  width: string
-}
+// export type ButtonProps = {
+//   backgroundColor: ColorProp
+//   borderRadius: string
+//   border: string
+//   children: any
+//   color: ColorProp
+//   disabled?: boolean
+//   fontSize: string
+//   fontWeight: string
+//   grow?: number
+//   height?: string
+//   href?: string
+//   hoverBackgroundColor: ColorProp
+//   hoverColor: ColorProp
+//   margin?: string
+//   maxWidth?: string
+//   padding: string
+//   shadow: string
+//   to?: string
+//   width: string
+// }
 
-const Button = (props: ButtonProps) => {
+const Button = (props) => {
+// const Button = (props: ButtonProps) => {
   const { to, href } = props
   if (to) return <StyledLink {...props} to={to} />
   if (href) return <Anchor {...props} href={href} />

@@ -1,19 +1,20 @@
 import styled, { css } from 'styled-components'
 import { key } from 'styled-theme'
 
-type FlexProps = {
-  flow: string
-  halign?: string
-  margin?: string
-  maxWidth?: string
-  padding?: string
-  shadow?: string
-  valign?: string
-  width: string
-  wrap?: string
-}
+// type FlexProps = {
+//   flow: string
+//   halign?: string
+//   margin?: string
+//   maxWidth?: string
+//   padding?: string
+//   shadow?: string
+//   valign?: string
+//   width: string
+//   wrap?: string
+// }
 
-const Flex = styled.div<FlexProps>`
+// const Flex = styled.div<FlexProps>`
+const Flex = styled.div`
   box-sizing: border-box;
   display: flex;
   flex-direction: ${({ flow }) => flow};

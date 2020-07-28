@@ -1,15 +1,16 @@
 import styled from 'styled-components'
 
-type ContainerProps = {
-  valign?: string
-  halign?: string
-  flow: string
-  padding: string
-  windowHeight: boolean
-  wrap?: string
-}
+// type ContainerProps = {
+//   valign?: string
+//   halign?: string
+//   flow: string
+//   padding: string
+//   windowHeight: boolean
+//   wrap?: string
+// }
 
-const Container = styled.div<ContainerProps>`
+// const Container = styled.div<ContainerProps>`
+const Container = styled.div`
   box-sizing: border-box;
   display: flex;
   flex-direction: ${({ flow }) => flow};

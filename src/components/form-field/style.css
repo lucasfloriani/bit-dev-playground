@@ -1,0 +1,18 @@
+.form-field {
+  position: relative;
+}
+
+.form-field__label,
+.form-field__input {
+  width: 100%;
+  height: 3rem;
+  font-size: 1rem;
+}
+
+.form-field__input:valid + .form-field__label,
+.form-field__input:focus + .form-field__label {
+  color: #26a69a;
+  font-size: .8rem;
+  top: -30px;
+  pointer-events: none;
+}

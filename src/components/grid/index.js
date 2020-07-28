@@ -1,20 +1,21 @@
 import styled from 'styled-components'
 
-type GridProps = {
-  column: string,
-  columnLength?: string,
-  halign?: string,
-  height?: string,
-  gap: string,
-  margin?: string,
-  maxWidth?: string,
-  padding?: string,
-  rows?: string,
-  valign?: string,
-  width: string,
-}
+// type GridProps = {
+//   column: string,
+//   columnLength?: string,
+//   halign?: string,
+//   height?: string,
+//   gap: string,
+//   margin?: string,
+//   maxWidth?: string,
+//   padding?: string,
+//   rows?: string,
+//   valign?: string,
+//   width: string,
+// }
 
-const Grid = styled.div<GridProps>`
+// const Grid = styled.div<GridProps>`
+const Grid = styled.div`
   box-sizing: border-box;
   display: grid;
   grid-gap: ${({ gap }) => gap};

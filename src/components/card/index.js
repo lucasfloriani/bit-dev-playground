@@ -1,18 +1,19 @@
 import styled from 'styled-components'
 import { key, palette } from 'styled-theme'
-import { ColorProp } from '../../themes/wrapper/types'
+// import { ColorProp } from '../theme/types'
 
-type CardProps = {
-  backgroundColor: ColorProp
-  borderRadius: string
-  height?: string
-  margin?: string
-  padding?: string
-  shadow: string
-  width?: string
-}
+// type CardProps = {
+//   backgroundColor: ColorProp
+//   borderRadius: string
+//   height?: string
+//   margin?: string
+//   padding?: string
+//   shadow: string
+//   width?: string
+// }
 
-const Card = styled.div<CardProps>`
+// const Card = styled.div<CardProps>`
+const Card = styled.div`
   background-color: ${({ backgroundColor: { type, position } }) => palette(type, position)};
   border-radius: ${({ borderRadius }) => borderRadius};
   box-shadow: ${({ shadow }) => key(['shadows', shadow])};

@@ -3,24 +3,25 @@ import styled from 'styled-components'
 import {
   font, key, palette, size,
 } from 'styled-theme'
-import { ColorProp } from '../../themes/wrapper/types'
+// import { ColorProp } from '../theme/types'
 
-type HeadingHTML = 1 | 2 | 3 | 4 | 5 | 6
+// type HeadingHTML = 1 | 2 | 3 | 4 | 5 | 6
 
-type HeadingProps = {
-  align: string
-  children: any
-  color: ColorProp
-  fontSize: string
-  fontWeight: string
-  hoverColor: ColorProp
-  level: HeadingHTML
-  margin: string
-}
+// type HeadingProps = {
+//   align: string
+//   children: any
+//   color: ColorProp
+//   fontSize: string
+//   fontWeight: string
+//   hoverColor: ColorProp
+//   level: HeadingHTML
+//   margin: string
+// }
 
 const Heading = styled(({
   children, color, fontSize, hoverColor, level, margin, ...props
-}: HeadingProps) => React.createElement(`h${level}`, props, children))`
+// }: HeadingProps) => React.createElement(`h${level}`, props, children))`
+}) => React.createElement(`h${level}`, props, children))`
   color: ${({ color: { type, position } }) => palette(type, position)};
   font-family: ${font('primary')};
   font-size: ${({ fontSize }) => size(fontSize)};
